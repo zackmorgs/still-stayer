@@ -1,0 +1,121 @@
+/*
+Theme Name: Still Stayer
+Author: Your Name
+Description: Custom theme for the band Still Stayer
+Version: 1.0
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+#header_main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background:linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)), url("/wp-content/themes/still-stayer/img/DSC_8784-Enhanced-NR.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-float {
+  padding: 2rem 1rem;
+  background: hsl(133.67deg 100% 15.49% / 14%);
+  backdrop-filter: blur(0.15rem);
+  text-align:Center;
+}
+
+#logo_main {
+  width: 100%;
+  height: auto;
+  padding-bottom:1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f1f1f1;
+  margin: 0;
+  height: 1px;
+}
+
+#nav_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#nav_main ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+#nav_main li {
+  display: block;
+  width:100%;
+}
+
+#nav_main a {
+  display: block;
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 0.25rem #111111;
+}
+
+.btn {
+  display:inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #f1f1f1;
+  color:#f1f1f1;
+  text-decoration:none;
+
+}
+
+.btn .icon {
+  padding-right:0.25rem;
+}
+
+h2, h3 {
+  font-weight:400;
+  text-transform:uppercase;
+}
