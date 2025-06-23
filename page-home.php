@@ -32,6 +32,5 @@
       </nav>
     </div>
   </header>
-
 </main>
 <?php get_footer(); ?>
