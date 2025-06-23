@@ -51,11 +51,12 @@ body {
   padding: 2rem 1rem;
   background: hsl(133.67deg 100% 15.49% / 14%);
   backdrop-filter: blur(0.15rem);
-  text-align:Center;
+  text-align:center;
+  width:100%;
 }
 
 #logo_main {
-  width: 100%;
+  width: 85vw;
   height: auto;
   padding-bottom:1rem;
 }
