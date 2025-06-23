@@ -12,8 +12,8 @@ $title = $args['title'] ?? 'Default Title';
         <hr />
         <br />
         <h3><?= $title ?></h3>
-        <!-- <a onclick="" class="btn">
+        <a onclick="scrollToContent()" class="btn">
             <img src="<?php echo get_template_directory_uri(); ?>/svg/chevron_down.svg" alt="Email Icon" class="icon" />
-        </a> -->
+        </a>
     </div>
 </header>

@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="blog-list">
+  
     <?php 
     get_template_part(
       slug: 'template-parts/hero', 
