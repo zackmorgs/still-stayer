@@ -2,12 +2,12 @@
 <main>
   <header id="header_main">
     <div class="header-float">
-      <img id="logo_main" src="<?php echo get_template_directory_uri(); ?>/img/LOGO REVISED 2023 WHITE SHADDOW.png"
-        alt="<?php bloginfo(show: 'name'); ?>" />
-      <!-- <h1><?php bloginfo(show: 'name'); ?></h1> -->
-      <!-- <p><?php bloginfo(show: 'description'); ?></p> -->
-       <hr/>
-       <br/>
+      <a href="/">
+        <img id="logo_main" src="<?php echo get_template_directory_uri(); ?>/img/LOGO REVISED 2023 WHITE SHADDOW.png"
+          alt="<?php bloginfo(show: 'name'); ?>" />
+      </a>
+      <hr />
+      <br />
       <nav id="nav_main">
         <ul>
           <li>
