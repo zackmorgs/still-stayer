@@ -32,7 +32,11 @@ body {
   line-height: 18px;
 }
 
-#hero_main{
+.w-full {
+  width: 100%;
+}
+
+#hero_main {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -40,7 +44,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background:linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)), url("/wp-content/themes/still-stayer/img/DSC_8784-Enhanced-NR.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("/wp-content/themes/still-stayer/img/DSC_8784-Enhanced-NR.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,14 +55,14 @@ body {
   padding: 2rem 1rem;
   background: hsl(133.67deg 100% 15.49% / 14%);
   backdrop-filter: blur(0.15rem);
-  text-align:center;
-  width:100%;
+  text-align: center;
+  width: 100%;
 }
 
 #logo_main {
   width: 85vw;
   height: auto;
-  padding-bottom:0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 hr {
@@ -89,7 +93,7 @@ hr {
 
 #nav_main li {
   display: block;
-  width:100%;
+  width: 100%;
 }
 
 #nav_main a {
@@ -98,38 +102,90 @@ hr {
   color: #f1f1f1;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  text-shadow: 0px 0px 0.25rem #111111;
   transition: text-shadow 0.3s ease, font-size 0.3s ease;
 }
 
 #nav_main a:hover {
-  text-shadow:0px 0px 0.25rem #f1f1f1;
-  font-size:1.125rem;
+  text-shadow: 0px 0px 0.25rem #f1f1f1;
+  font-size: 1.125rem;
 }
 
 .btn {
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0.75rem;
   border: 1px solid #f1f1f1;
-  color:#f1f1f1;
-  text-decoration:none;
-
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius:0.25rem;
 }
-
+.btn:hover {
+  border:1px solid white;
+  color: white;
+}
 .btn span {
-  padding-left:0.25rem;
+  padding-left: 0.25rem;
 }
 
-h1, h2, h3 {
-  font-weight:400;
-  text-transform:uppercase;
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .content {
-  height:100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-float {
+  padding: 2rem 1rem;
+  background: hsl(133.67deg 100% 15.49% / 14%);
+  backdrop-filter: blur(0.15rem);
+  text-align: center;
+  width: 100%;
+
+
+}
+
+#content_spotify {
+  background-image: url("/wp-content/themes/still-stayer/img/2.jpg");
+  ;
+
+}
+
+.icon-spotify-text {
+  max-width: 8rem;
+}
+
+.blog-post {
   padding:1rem;
+  text-align:left;
+
+}
+.blog-post h2 {
+  font-size:1.5rem;
+  line-height:1em;
+}
+.blog-post h2 a{
+  text-decoration:none;
+  color:#f1f1f1;
+}
+footer {
+  padding: 2rem 1rem;
+  background: hsl(133.67deg 100% 15.49% / 14%);
+  backdrop-filter: blur(0.15rem);
+  text-align: center;
 }
 
 /* sm: ≥ 640px */
@@ -140,7 +196,7 @@ h1, h2, h3 {
 /* md: ≥ 768px */
 @media (min-width: 768px) {
   #logo_main {
-    max-width:28rem;
+    max-width: 28rem;
   }
 }
 

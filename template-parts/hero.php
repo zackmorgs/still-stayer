@@ -6,7 +6,7 @@ $title = $args['title'] ?? 'Default Title';
     <div class="header-float">
         <a href="/">
             <img id="logo_main"
-                src="<?php echo get_template_directory_uri(); ?>/img/LOGO REVISED 2023 WHITE SHADDOW.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/still-stayer-logo-no-outline.png"
                 alt="<?php bloginfo(show: 'name'); ?>" />
         </a>
         <hr />
