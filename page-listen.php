@@ -12,7 +12,7 @@
     <div class="content-float">
       <h3>Spotify</h3>
       <p>You can find our discography on Spotify below.</p>
-      <a class="btn" href="https://open.spotify.com/artist/0M6zJSeM1XgyIu64Hfrmlm">
+      <a class="btn" href="https://open.spotify.com/artist/0M6zJSeM1XgyIu64Hfrmlm" target="_blank" rel="noopener noreferrer">
         <img class="icon icon-spotify-text w-full" src="<?php echo get_template_directory_uri(); ?>/img/spotify-logo-raster.png" alt="Spotify Link" />
       </a>
     </div>

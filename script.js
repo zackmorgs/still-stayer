@@ -13,4 +13,45 @@ let scrollToContent = () => {
     }
 };
 
+let handleNavClick = (event) => {
+    let nav_main = document.getElementById('nav_main');
 
+    nav_main.classList.toggle('open');
+    event.preventDefault();
+    event.stopPropagation();
+};
+
+let createRandomDust = () => {
+    // Add some random dust particles
+
+    const dust = document.querySelector('.dust');
+    const randomX = Math.random() * 100;
+    const randomY = Math.random() * 100;
+    const size = Math.random() * 2 + 1;
+
+    const particle = document.createElement('div');
+    particle.style.position = 'absolute';
+    particle.style.left = randomX + '%';
+    particle.style.top = randomY + '%';
+    particle.style.width = size + 'px';
+    particle.style.height = size + 'px';
+    particle.style.background = 'rgba(255,255,255,0.6)';
+    particle.style.borderRadius = '50%';
+    particle.style.animation = 'dust 12s linear infinite';
+
+    dust.appendChild(particle);
+
+    // Remove particle after animation
+    setTimeout(() => {
+        if (particle.parentNode) {
+            particle.parentNode.removeChild(particle);
+        }
+    }, 12000);
+
+    // Create random dust particles periodically
+    setInterval(createRandomDust, 2000);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    // createRandomDust();
+});
