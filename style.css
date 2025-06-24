@@ -233,6 +233,10 @@ hr {
   backdrop-filter: blur(1rem);
 }
 
+.btn-spotify {
+  border: 1px solid #1ed760;
+}
+
 .btn:hover {
   border: 1px solid white;
   color: white;

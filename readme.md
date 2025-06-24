@@ -1,2 +1,16 @@
 # still-stayer
-My go at wordpress theme for the band [Still Stayer](https://facebook.com/stillstayer).
+My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stillstayer).
+
+## Instructions for Client
+1. Download the repo as a .zip above.
+2. Place it in the themes folder
+    - `/wp-content/themes/`
+3. Create the following pages using wordpress. Just give them a title - content not supported yet.
+    - Listen
+    - Shows
+    - Merch
+    - Gallery
+    - Blog
+    - Contact
+4. Done ✔️
+
