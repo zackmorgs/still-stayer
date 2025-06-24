@@ -1,25 +1,35 @@
 <?php get_header(); ?>
 
 <main class="blog-list">
-  
-    <?php 
-    get_template_part(
-      slug: 'template-parts/hero', 
-      name: null, 
-      args: ['title' => 'Blog']); 
-    ?>
 
-  <section class="content">
-    <?php if (have_posts()):
-    while (have_posts()):
-      the_post(); ?>
-      <article class="blog-post">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <p><?php the_excerpt(); ?></p>
-      </article>
-    <?php endwhile; else: ?>
-    <p>No posts found.</p>
-  <?php endif; ?>
+  <?php
+  get_template_part(
+    slug: 'template-parts/hero',
+    name: null,
+    args: ['title' => 'Blog']
+  );
+  ?>
+
+  <section id="excerpts" class="content">
+
+    <div class="content-float">
+      <h2 id="heading_latest_posts">Latest Posts</h2>
+      <?php if (have_posts()):
+        while (have_posts()):
+          the_post(); ?>
+          <a class="excerpt-permalink" href="<?php the_permalink(); ?>">
+            <article class="blog-post-excerpt">
+              <h2><?php the_title(); ?></h2>
+              <hr />
+              <span class="excerpt">
+                <?php the_excerpt(); ?>
+              </span>
+            </article>
+          </a>
+        <?php endwhile; else: ?>
+        <p>No posts found.</p>
+      <?php endif; ?>
+    </div>
   </section>
 </main>
 <?php get_footer(); ?>
