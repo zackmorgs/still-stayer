@@ -12,5 +12,8 @@ My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stil
     - Gallery
     - Blog
     - Contact
-4. Done ✔️
+4. Settings > Reading 
+    - Homepage: "Home"
+    - Posts Page: "Blog"
+5. Done ✔️
 

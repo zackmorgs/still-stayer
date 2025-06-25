@@ -17,5 +17,14 @@
       </a>
     </div>
   </section>
+  <section id="content_youtube" class="content">
+    <div class="content-float">
+        <img id="youtube_logo_text" src="<?php echo get_template_directory_uri(); ?>/svg/youtube-logo-full.svg" alt="YouTube Logo" />
+        <p>You can watch our music videos and more on YouTube.</p>
+        <a href="https://www.youtube.com/@stillstayer414" class="btn btn-youtube" target="_blank" rel="noopener noreferrer">
+          <img src="<?php echo get_template_directory_uri(); ?>/svg/youtube.svg" alt="YouTube Link" class="icon icon-youtube" />
+        </a>
+    </div>
+  </section>
 </main>
 <?php get_footer(); ?>
