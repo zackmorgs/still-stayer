@@ -32,6 +32,10 @@ body {
   line-height: 18px;
 }
 
+#wpadminbar {
+  display: none;
+}
+
 p {
   line-height: 1.5em;
 }
@@ -98,7 +102,9 @@ main {
 
 #nav_toggle {
   background: transparent;
-  padding: 0.25rem 0.5rem;
+  /* padding: 0.25rem 0.5rem; */
+  height: 3rem;
+  width: 3rem;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +122,18 @@ main {
   margin: 3px auto;
   transition: all 0.3s ease-in-out;
   border-radius: 0.5rem;
+}
+
+.open #nav_toggle span:first-child {
+  transform: rotate(45deg) translate(6px, 6px)
+}
+
+.open #nav_toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.open #nav_toggle span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 #nav_list {
@@ -226,7 +244,8 @@ hr {
   font-size: 1.125rem;
 }
 
-.btn {
+.btn,
+#submit {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -237,7 +256,11 @@ hr {
   border-radius: 0.25rem;
   backdrop-filter: blur(1rem);
 }
-
+#submit {
+  background:transparent;
+  width:100%;
+  font-family:"GFS Didot", serif;
+}
 .btn-spotify {
   border: 1px solid #1ed760;
 }
@@ -257,6 +280,10 @@ h2,
 h3 {
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.wp-block-heading {
+  line-height:2rem;
 }
 
 .content {
@@ -283,6 +310,12 @@ h3 {
   text-align: center;
   width: 100%;
 }
+
+.content-float img {
+  width: 100%;
+  height: auto;
+}
+
 
 .content-float a {
   color: #f1f1f1;
@@ -764,6 +797,134 @@ footer {
   }
 }
 
+/* blog post page stuff */
+.post-header {
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("/wp-content/themes/still-stayer/img/0M3A1031.jpg");
+  background-size:cover;
+}
+.post-info {
+  padding:2rem 1rem;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(0.15rem);
+}
+
+.post-info h1 {
+  font-size:1.5rem;
+  line-height: 1.5em;
+}
+
+.post-content {
+  padding:1rem;
+}
+
+.comments {
+  padding:1rem;
+}
+
+#commentform {
+
+}
+.wp-block-list {
+  line-height:1.75rem;
+}
+
+.cat-links {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.cat-links a {
+  color: #5194db;
+  text-decoration: none;
+}
+#reply-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align:center;
+}
+
+[for="comment"] {
+  display: block;
+  margin-bottom: 0.5rem;
+  /* color:#777777; */
+}
+#comment,
+#author,
+#email,
+#url {
+  padding:0.5rem;
+  display:block;
+  width:100%;
+  border-radius:0.25rem;
+    font-family:"GFS Didot", serif;
+}
+
+.post-header  {
+  width:100vw;
+}
+.commentlist {
+
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+#comments {
+  font-size:1.25rem;
+  line-height:1.5em;
+}
+.comment  {
+
+  padding:1rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius:0.25rem;
+  margin-bottom:1rem;
+}
+.comment-body {
+  line-height:1.25rem;
+}
+.comment-awaiting-moderation {
+  background: rgba(255, 255, 0, 0.1);
+  display:block;
+  padding:1rem;
+  margin-top:1rem;
+}
+.comment-meta {
+  font-size:0.875rem;
+  color:#777777;
+  margin-bottom:0.5rem;
+}
+.comment-meta a,
+.comment-meta a:visited {
+  color: #5194db;
+  text-decoration: none;
+      font-size: 1rem;
+}
+.reply .comment-reply-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 0.875rem;
+  background:trasparent;
+
+  display:inline-block;
+  margin-top:1rem;
+  padding:0.5rem 1rem;
+  background: transparent;
+  border-radius:0.25rem;
+  border:1px solid #f1f1f1;
+}
+.reply {
+
+
+}
 /* sm: ≥ 640px */
 @media (min-width: 640px) {
   /* ... */
@@ -778,11 +939,24 @@ footer {
   .content-float {
     max-width: 28rem;
   }
+
+  .post-content,
+  .comments {
+    max-width:32ch;
+    font-size:1.5rem;
+    margin:0 auto;
+  }
+
 }
 
 /* lg: ≥ 1024px */
 @media (min-width: 1024px) {
   /* ... */
+  #submit {
+    display:inline-block;
+    width:initial;
+    margin:0 auto;
+  }
 }
 
 /* xl: ≥ 1280px */

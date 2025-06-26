@@ -13,6 +13,21 @@ let scrollToContent = () => {
     }
 };
 
+let scrollToPost = () => {
+    let postContent = document.querySelector('.post-content');
+
+    // smooth scroll to post content
+    if (postContent) {
+        postContent.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+    } else {
+        console.error('Post content element not found');
+    }
+};
+
 let handleNavClick = (event) => {
     let nav_main = document.getElementById('nav_main');
 
