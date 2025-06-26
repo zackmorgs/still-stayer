@@ -36,6 +36,11 @@ p {
   line-height: 1.5em;
 }
 
+.text-lg {
+  font-size: 1.25rem;
+  line-height: 1.25em;
+}
+
 .page {
   position: relative;
   /* top:0;
@@ -240,6 +245,7 @@ hr {
 .btn:hover {
   border: 1px solid white;
   color: white;
+  cursor: pointer;
 }
 
 main .btn span {
@@ -268,11 +274,18 @@ h3 {
 }
 
 .content-float {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
   padding: 2rem 1rem;
   background: hsl(133.67deg 100% 15.49% / 14%);
   backdrop-filter: blur(0.15rem);
   text-align: center;
   width: 100%;
+}
+
+.content-float a {
+  color: #f1f1f1;
 }
 
 #content_spotify {
@@ -288,8 +301,16 @@ h3 {
   max-width: 8rem;
 }
 
+.icon-big-cartel {
+  width: 6rem;
+}
+
 #content_youtube {
   background-image: url("/wp-content/themes/still-stayer/img/band-1.jpg");
+}
+
+#content_big_cartel {
+  background-image: url("/wp-content/themes/still-stayer/img/6-2.jpg");
 }
 
 #youtube_logo_text {
@@ -769,9 +790,11 @@ footer {
   main {
     top: -72px;
   }
+
   .home main {
     top: 0;
   }
+
   #nav_main {
     display: flex;
     height: initial;
@@ -788,8 +811,14 @@ footer {
   }
 
   #nav_logo {
-    margin-left:1rem;
+    margin-left: 1rem;
   }
+
+  #nav_logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
   #nav_toggle {
     display: none;
   }
@@ -802,18 +831,22 @@ footer {
     height: initial;
     background: transparent;
     backdrop-filter: none;
-    margin-right:1rem;
+    margin-right: 1rem;
   }
 
   #nav_list a {
     font-size: 1rem;
-    transition:background 0.333s ease-in-out;
+    transition: background 0.333s ease-in-out;
   }
 
   #nav_list a:hover {
     background: #9191911a;
     border-radius: 0.25rem;
-  } 
+  }
+
+  .content-float {
+    max-width: 48rem;
+  }
 }
 
 /* 2xl: ≥ 1536px */
