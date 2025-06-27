@@ -489,11 +489,9 @@ h3 {
 }
 
 .footer-social .social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
   margin-top: 1rem;
   list-style-type: none;
   padding: 1rem;
@@ -516,6 +514,7 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: background 0.3s ease-in-out;
+  width:7ch;
 }
 
 #hero_bg {
@@ -1293,11 +1292,10 @@ h3 {
     height: 1.5rem;
   }
 
-  .footer-social .social-links img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
+ .footer-social .social-links a:hover {
+  transform:scale(1.05);
+  transition: transform 0.3s ease-in-out;
+ }
   #author,
   #email,
   #url {
