@@ -15,7 +15,7 @@
       </a>
     </div>
   </section>
-  <section class="content">
+  <section id="content_merch" class="content">
     <div class="content-float">
       <?php
       if (have_posts()):

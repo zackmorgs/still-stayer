@@ -160,7 +160,7 @@ let handleNavState = () => {
         navLinks.forEach((link) => {
             if (link.href.includes(pathname)) {
                 console.log('Active link:', link.href);
-                link.classList.add('active');
+                link.classList.add('active-page');
             }
         });
 
