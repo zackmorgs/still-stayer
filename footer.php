@@ -1,5 +1,5 @@
 <?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/script.js"></script>
 <footer id="footer_main">
     <div class="footer-social">
         <ul class="social-links">
