@@ -1064,8 +1064,8 @@ h3 {
   border-radius: 0.25rem;
   border: 1px solid #f1f1f1;
 }
-
-.reply {}
+/* 
+.reply {} */
 
 #reply-title>a {
   color: #f1f1f1;
@@ -1138,7 +1138,7 @@ h3 {
 }
 
 .form-submit input {
-  transition translate 0.3s ease-in-out;
+  transition: translate 0.3s ease-in-out;
 }
 
 .form-submit input:hover {

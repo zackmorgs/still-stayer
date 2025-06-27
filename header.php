@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/style.min.css" rel="stylesheet" />
 </head>
 
 <body <?php body_class(); ?>>
