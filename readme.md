@@ -5,7 +5,7 @@ My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stil
 1. Download the repo as a .zip above.
 2. Place it in the themes folder
     - `/wp-content/themes/`
-3. Create the following pages using wordpress. Just give them a title - content not supported yet.
+3. Create the following pages using wordpress. Just give them a title - add content after.
     - Listen
     - Shows
     - Merch
