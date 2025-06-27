@@ -9,6 +9,7 @@ My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stil
 
 2. Place it in the themes folder
     - `/wp-content/themes/`
+    - What you do should result in `/wp-content/themes/still-stayer`.
 3. Create the following pages using wordpress. Just give them a title for now. 
     - Listen
         - Not content editable.
