@@ -32,7 +32,7 @@
         </ul>
     </div>
     <div class="footer-copy">
-        <p>&copy; <?php echo date("Y"); ?> Still Stayer. All heart, no brakes. All rights reserved.</p>
+        <p>&copy; <?php echo date("Y"); ?> Still Stayer. All Heart, No Brakes. All rights reserved.</p>
     </div>
 </footer>
 </body>
