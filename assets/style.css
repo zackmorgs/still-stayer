@@ -15,6 +15,12 @@ html {
   box-sizing: inherit;
 }
 
+*::selection {
+  color: black;
+  background-color: rgba(220, 255, 19, 0.75);
+}
+
+
 html {
   font-family: "GFS Didot", serif;
   font-weight: 400;
@@ -264,6 +270,10 @@ hr {
   transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+#submit {
+  border: 1px solid #fff7f742;
+}
+
 .btn:hover {
   transform: scale(1.05);
 }
@@ -276,6 +286,10 @@ hr {
 
 .icon.icon-big-cartel {
   max-height: 2rem;
+}
+
+.btn-email {
+  min-width: 6ch;
 }
 
 .btn-spotify {
@@ -297,6 +311,10 @@ h2,
 h3 {
   font-weight: 400;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .wp-block-heading {
@@ -360,6 +378,10 @@ h3 {
 
 #content_contact {
   background-image: url('/wp-content/themes/still-stayer/img/5-2.jpg');
+}
+
+#content_contact .content-float {
+  background: #000000a6;
 }
 
 #content_spotify {
@@ -427,17 +449,17 @@ h3 {
 .blog-post-excerpt {
   padding: 1rem;
   text-align: left;
-  background: rgb(15 15 15 / 92%);
+  background: rgb(15 15 15 / 27%);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   max-width: 44ch;
   margin: 1rem auto;
-
+  backdrop-filter: blur(1rem);
 }
 
 .blog-post-excerpt h2 {
   font-size: 1.5rem;
-  line-height: 1.25em;
+  line-height: 1.5em;
   text-transform: none;
 }
 
@@ -451,7 +473,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background: linear-gradient(45deg, #111111, #121212);
 }
 
 .footer-copy {
@@ -1258,7 +1280,7 @@ h3 {
 
   #nav_list a:hover,
   .active-page {
-    background: #9191911a;
+    background: #0000001f;
     border-radius: 0.25rem;
   }
 
@@ -1310,11 +1332,12 @@ h3 {
 
   #navbar {
     background: transparent;
+    backdrop-filter: none;
   }
 
-  #nav_logo {
+  /* #nav_logo {
     margin-left: 1rem;
-  }
+  } */
 
   #nav_logo:hover {
     transform: scale(1.1);
