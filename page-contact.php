@@ -7,7 +7,7 @@
     args: ['title' => 'Contact']
   );
   ?>
-  <section class="content">
+  <section id="content_contact" class="content">
     <div class="content-float">
       <?php
       if (have_posts()):

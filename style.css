@@ -255,12 +255,19 @@ hr {
   text-decoration: none;
   border-radius: 0.25rem;
   backdrop-filter: blur(1rem);
+  transition:transform 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.btn:hover {
+  transform:scale(1.05);
+}
+
 #submit {
-  background:transparent;
-  width:100%;
-  font-family:"GFS Didot", serif;
+  background: transparent;
+  width: 100%;
+  font-family: "GFS Didot", serif;
 }
+
 .btn-spotify {
   border: 1px solid #1ed760;
 }
@@ -283,7 +290,7 @@ h3 {
 }
 
 .wp-block-heading {
-  line-height:2rem;
+  line-height: 2rem;
 }
 
 .content {
@@ -321,6 +328,22 @@ h3 {
   color: #f1f1f1;
 }
 
+#content_bandcamp {
+  background: url("/wp-content/themes/still-stayer/img/album-all_heart-bg.jpg")
+    center center / cover no-repeat;
+}
+
+#bandcamp_header {
+  max-width:48ch;
+}
+#content_bandcamp .content-float {
+  background: #00000061;
+  backdrop-filter: blur(0.15rem);
+}
+#content_contact {
+  background-image: url('/wp-content/themes/still-stayer/img/5-2.jpg');
+}
+
 #content_spotify {
   background-image: url("/wp-content/themes/still-stayer/img/7.jpg");
 }
@@ -346,14 +369,20 @@ h3 {
   background-image: url("/wp-content/themes/still-stayer/img/6-2.jpg");
 }
 
+#content_big_cartel .content-float {
+  background: hsl(0deg 0% 0% / 88%);
+  backdrop-filter: blur(0.15rem);
+}
+
 #youtube_logo_text {
   background: #f1f1f1;
   max-width: 16ch;
-  /* border-radius:0.5rem; */
+  border-radius: 0.25rem;
 }
 
-.btn-youtube {
+.btn.btn-youtube {
   background-color: #ffffff21;
+  max-width: 8ch;
 }
 
 .icon-youtube {
@@ -380,9 +409,12 @@ h3 {
 .blog-post-excerpt {
   padding: 1rem;
   text-align: left;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(15 15 15 / 92%);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  max-width: 44ch;
+  margin: 1rem auto;
+
 }
 
 .blog-post-excerpt h2 {
@@ -396,12 +428,44 @@ h3 {
   color: #f1f1f1;
 }
 
-footer {
-  font-size: 0.5rem;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.25);
+#footer_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-copy {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgb(84 84 84 / 8%);
   backdrop-filter: blur(0.15rem);
   text-align: center;
+  max-width: 56ch;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.footer-social .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  list-style-type: none;
+  padding: 1rem;
+  background: #171717;
+  border-radius: 0.5rem;
+}
+
+.footer-social .social-links img {
+    width: auto;
+    height: 1rem;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 0.5rem;
 }
 
 #hero_bg {
@@ -799,44 +863,50 @@ footer {
 
 /* blog post page stuff */
 .post-header {
-  height:100vh;
-  display:flex;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: url("/wp-content/themes/still-stayer/img/0M3A1031.jpg");
-  background-size:cover;
+  background-size: cover;
 }
+
 .post-info {
-  padding:2rem 1rem;
+  padding: 2rem 1rem;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(0.15rem);
 }
 
 .post-info h1 {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   line-height: 1.5em;
 }
 
 .post-content {
-  padding:1rem;
+  padding: 1rem;
 }
 
 .comments {
-  padding:1rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
-#commentform {
+#commentform {}
 
+[for="wp-comment-cookies-consent"] {
+  font-size:0.75rem;
 }
+
 .wp-block-list {
-  line-height:1.75rem;
+  line-height: 1.75rem;
 }
 
 .cat-links {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin: 1rem 0.5rem;
+  /* margin-right: 0.5rem; */
   padding: 0.25rem 0.5rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem;
@@ -846,10 +916,13 @@ footer {
   color: #5194db;
   text-decoration: none;
 }
+
 #reply-title {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
-  text-align:center;
+  margin: 1rem -1rem;
+      padding: 1rem;
+    background-color: #393939;
+    text-transform: none;
 }
 
 [for="comment"] {
@@ -857,74 +930,255 @@ footer {
   margin-bottom: 0.5rem;
   /* color:#777777; */
 }
+
 #comment,
 #author,
 #email,
 #url {
-  padding:0.5rem;
-  display:block;
-  width:100%;
-  border-radius:0.25rem;
-    font-family:"GFS Didot", serif;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem;
+  font-family: "GFS Didot", serif;
+  background: #151515;
+  color: #f1f1f1;
+  border: none;
 }
 
-.post-header  {
-  width:100vw;
+#comment:focus-visible,
+#author:focus-visible,
+#email:focus-visible,
+#url:focus-visible {
+  outline: 2px solid #243e48;
 }
+
+.post-header {
+  width: 100vw;
+}
+
 .commentlist {
 
   list-style-type: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-#comments {
-  font-size:1.25rem;
-  line-height:1.5em;
-}
-.comment  {
 
-  padding:1rem;
+#comments {
+  text-transform: none;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+}
+
+.comment {
+
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.15);
-  border-radius:0.25rem;
-  margin-bottom:1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
+
 .comment-body {
-  line-height:1.25rem;
+  line-height: 1.25rem;
 }
+
 .comment-awaiting-moderation {
   background: rgba(255, 255, 0, 0.1);
-  display:block;
-  padding:1rem;
-  margin-top:1rem;
+  display: block;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius:0.5rem;
+  font-size:0.75rem;
 }
+
 .comment-meta {
-  font-size:0.875rem;
-  color:#777777;
-  margin-bottom:0.5rem;
+  font-size: 0.875rem;
+  color: #777777;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
+
 .comment-meta a,
 .comment-meta a:visited {
   color: #5194db;
   text-decoration: none;
-      font-size: 1rem;
+  font-size: 1rem;
 }
+
+.comment-author {
+  font-weight: 700;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.comment-author .fn a {
+  color: #f1f1f1;
+  font-style: normal;
+  text-decoration: none;
+  ;
+}
+
 .reply .comment-reply-link {
   color: #f1f1f1;
   text-decoration: none;
   font-size: 0.875rem;
-  background:trasparent;
+  background: trasparent;
 
-  display:inline-block;
-  margin-top:1rem;
-  padding:0.5rem 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
   background: transparent;
-  border-radius:0.25rem;
-  border:1px solid #f1f1f1;
+  border-radius: 0.25rem;
+  border: 1px solid #f1f1f1;
 }
-.reply {
 
+.reply {}
+
+#reply-title>a {
+  color: #f1f1f1;
+  line-height: 2.5rem;
+  display: block;
+}
+
+#cancel-comment-reply-link {
+  margin-top: 1rem;
+  color: #c63939;
+  text-decoration: none;
+}
+
+.logged-in-as {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #f1f1f1;
+}
+
+.logged-in-as a {
+  color: #5194db;
+  text-decoration: none;
+}
+
+.required-field-message {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
 
 }
+
+.required,
+.required-field-message {
+  color: #d52f2f;
+
+}
+
+.entry-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cat-links {
+  display: inline-block;
+  margin: 1rem 0.5rem auto;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  display: none;
+}
+
+.comment-form-cookies-consent {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+}
+.comment-form-cookies-consent label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+#wp-comment-cookies-consent {
+  margin-right:1rem;
+}
+
+.form-submit input {
+  transition translate 0.3s ease-in-out;
+}
+.form-submit input:hover {
+  translate:scale(1.05);
+}
+.wp-block-gallery {
+  /* display:flex; */
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.wp-block-image {
+  margin: 0;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.gallery-controls button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  backdrop-filter: blur(0.5rem);
+}
+
+.gallery-controls button:first-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.gallery-controls button:last-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.wp-block-gallery.has-nested-images.fullscreen {
+  display: block;
+  height: 100vh;
+  gap: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen .wp-block-image {
+  min-width: 100wh;
+  height: auto;
+}
+
 /* sm: ≥ 640px */
 @media (min-width: 640px) {
   /* ... */
@@ -940,22 +1194,53 @@ footer {
     max-width: 28rem;
   }
 
+
   .post-content,
   .comments {
-    max-width:32ch;
-    font-size:1.5rem;
-    margin:0 auto;
+    max-width: 42ch;
+    font-size: 1.25rem;
+    margin: 1rem auto 0;
+    background-color: #222;
+  }
+
+  .post-content {
+    margin-top: -4rem;
   }
 
 }
 
 /* lg: ≥ 1024px */
 @media (min-width: 1024px) {
+
   /* ... */
   #submit {
+    display: inline-block;
+    width: initial;
+    margin: 0 auto;
+  }
+
+  .footer-copy {
+    min-width: 120ch;
+  }
+    #nav_list a:hover,
+  #nav_list .active {
+    background: #9191911a;
+    border-radius: 0.25rem;
+  }
+
+  .footer-social .social-links img {
+    height:1.5rem;
+  }
+   .footer-social .social-links img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+   }
+  #author, #email, #url {
     display:inline-block;
     width:initial;
-    margin:0 auto;
+  }
+  #commentform label {
+    display:block;
   }
 }
 
@@ -1010,13 +1295,11 @@ footer {
 
   #nav_list a {
     font-size: 1rem;
-    transition: background 0.333s ease-in-out;
+    margin: 0 0.25rem;
+    transition:background-color 1s ease-in-out;
   }
 
-  #nav_list a:hover {
-    background: #9191911a;
-    border-radius: 0.25rem;
-  }
+
 
   .content-float {
     max-width: 48rem;

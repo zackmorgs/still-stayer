@@ -27,22 +27,22 @@
         </div>
         <ul id="nav_list">
           <li>
-            <a href="/listen">Listen</a>
+            <a href="/listen/">Listen</a>
           </li>
           <li>
-            <a href="/shows">Shows</a>
+            <a href="/shows/">Shows</a>
           </li>
           <li>
-            <a href="/merch">Merch</a>
+            <a href="/merch/">Merch</a>
           </li>
           <li>
-            <a href="/gallery">Gallery</a>
+            <a href="/gallery/">Gallery</a>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <a href="/blog/">Blog</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/contact/">Contact</a>
           </li>
         </ul>
     </nav>
