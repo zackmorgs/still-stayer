@@ -2,7 +2,7 @@
 $title = $args['title'] ?? 'Default Title';
 ?>
 
-<header id="hero_main">
+<header id="hero_main" class="masked-gradient">
     <div class="header-float">
         <a href="/">
             <img id="logo_main" src="<?php echo get_template_directory_uri(); ?>/img/still-stayer-logo-no-outline.png"

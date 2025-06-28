@@ -322,6 +322,10 @@ h3 {
 .wp-block-heading {
   line-height: 2rem;
 }
+/* 
+.masked-gradient {
+  mask-image: linear-gradient(transparent 33.333%, black 66.666%, transparent 100%);
+} */
 
 .content {
   min-height: 100vh;
@@ -335,6 +339,7 @@ h3 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .content-float {
@@ -497,7 +502,8 @@ h3 {
   margin-top: 1rem;
   list-style-type: none;
   padding: 1rem;
-  background: #6861614f;
+      background: #68616100;
+
   border-radius: 0.5rem;
 }
 
@@ -1263,6 +1269,9 @@ h3 {
     margin-top: -4rem;
   }
 
+  .footer-social .social-links {
+      background: #6861614f;
+  }
 }
 
 /* lg: ≥ 1024px */
@@ -1289,7 +1298,6 @@ h3 {
     background: #1212126e;
     box-shadow: inset 0px 0px 10px #00000021;
   }
-
   .footer-social .social-links img {
     height: 1.5rem;
   }
