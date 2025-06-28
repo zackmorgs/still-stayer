@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all -p watch:js watch:css",
-    "build:js": "esbuild ./assets/script.dev.js --minify --sourcemap --outfile=./assets/script.js",
-    "watch:js": "esbuild ./assets/script.dev.js --minify --sourcemap --outfile=./assets/script.js --watch",
-    "build:css": "esbuild ./style.css --minify --sourcemap --outfile=./style.min.css",
-    "watch:css": "esbuild ./style.css --minify --sourcemap --outfile=./style.min.css --watch"
+    "build:js": "esbuild ./assets/script.js --minify --sourcemap --outfile=./assets/script.js",
+    "watch:js": "esbuild ./assets/script.js --minify --sourcemap --outfile=./assets/script.js --watch",
+    "build:css": "esbuild ./style.dev.css --minify --sourcemap --outfile=./style.css",
+    "watch:css": "esbuild ./style.dev.css --minify --sourcemap --outfile=./style.css --watch"
   },
   "keywords": [],
   "author": "",
