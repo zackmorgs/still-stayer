@@ -7,7 +7,7 @@
 
   <title><?php wp_title('|', true, 'right');
   bloginfo('name'); ?></title>
-  <?php wp_head(); ?>
+ <?php wp_head(); ?> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
