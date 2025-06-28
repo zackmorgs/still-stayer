@@ -258,6 +258,7 @@ hr {
   font-size: 1.125rem;
 }
 
+.wp-block-button__link,
 .btn,
 #submit {
   display: inline-flex;
@@ -270,6 +271,10 @@ hr {
   border-radius: 0.25rem;
   backdrop-filter: blur(1rem);
   transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.wp-block-button__link {
+  background:none;
 }
 
 #submit {
@@ -399,6 +404,20 @@ h3 {
   backdrop-filter: blur(0.15rem);
 }
 
+#content_apple_music {
+  background:url("/wp-content/themes/still-stayer/img/6-2.jpg");
+}
+
+#content_amazon {
+  background-image: url("/wp-content/themes/still-stayer/img/8.jpg");
+}
+#content_deezer {
+  background-image: url("/wp-content/themes/still-stayer/img/band-1.jpg");
+}
+#content_pandora {
+  background-image: url("/wp-content/themes/still-stayer/img/9-2.jpg");
+}
+
 .icon-spotify-text {
   max-width: 8rem;
 }
@@ -419,11 +438,28 @@ h3 {
   background: hsl(0deg 0% 0% / 48%);
   backdrop-filter: blur(0.15rem);
 }
-
+#youtube_logo_music,
+#amazon_music_logo {
+  background: #f1f1f1;
+  max-width: 22ch;
+  border-radius: 0.25rem;
+  padding:1rem;
+}
 #youtube_logo_text {
   background: #f1f1f1;
   max-width: 22ch;
   border-radius: 0.25rem;
+}
+
+.apple-music-link ,
+.deezer-link,
+.pandora-link {
+  padding:1rem;
+  background:#f1f1f1;
+  display:block;
+  border-radius:0.5rem;
+  max-width:24ch;
+  margin:0 auto;
 }
 
 .btn.btn-youtube {

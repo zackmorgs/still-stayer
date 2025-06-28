@@ -1,7 +1,12 @@
 # still-stayer
 My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stillstayer).
 
-
+## To DO:
+- Loading state for website
+- Cookies acceptance?
+- Streaming menu
+    - ex: https://nbthiev.es/DCCExtendedAW
+- 
 <!-- ## Instructions for Client -->
 <!-- 
 ![Download](download-screen.png "Download Tutorial") -->
