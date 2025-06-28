@@ -1,5 +1,123 @@
-let scrollToContent=()=>{let o=document.querySelector(".content");o?o.scrollIntoView({behavior:"smooth",block:"start",content:"nearest"}):console.error("Content element not found")},scrollToPost=()=>{let o=document.querySelector(".post-content");o?o.scrollIntoView({behavior:"smooth",block:"start",inline:"nearest"}):console.error("Post content element not found")},handleNavClick=o=>{document.getElementById("nav_main").classList.toggle("open"),o.preventDefault(),o.stopPropagation()},createRandomDust=()=>{const o=document.querySelector(".dust"),t=Math.random()*100,l=Math.random()*100,e=Math.random()*2+1,n=document.createElement("div");n.style.position="absolute",n.style.left=t+"%",n.style.top=l+"%",n.style.width=e+"px",n.style.height=e+"px",n.style.background="rgba(255,255,255,0.6)",n.style.borderRadius="50%",n.style.animation="dust 12s linear infinite",o.appendChild(n),setTimeout(()=>{n.parentNode&&n.parentNode.removeChild(n)},12e3),setInterval(createRandomDust,2e3)},handleGallery=()=>{const o=document.querySelectorAll(".wp-block-gallery");if(console.log(o),o){let t=[];o.forEach((l,e)=>{t.push({obj:l,position:0,images:[]}),t[e].images=l.querySelectorAll(".wp-block-image img"),showImage(t[e],t[e].position);let n=document.createElement("div");n.classList.add("gallery-controls"),n.innerHTML=`
-                <button class="prev"><img src="/wp-content/themes/still-stayer/svg/chevron_left.svg"/></button>
-                <button class="next"><img src="/wp-content/themes/still-stayer/svg/chevron_right.svg"/></button>
-            `,t[e].obj.appendChild(n),n.querySelector(".prev").addEventListener("click",()=>{t[e].position--,t[e].position<0&&(t[e].position=t[e].images.length-1),showImage(t[e],t[e].position)}),n.querySelector(".next").addEventListener("click",()=>{t[e].position++,t[e].position>=t[e].images.length&&(t[e].position=0),showImage(t[e],t[e].position)}),n.onclick=s=>{s.target.tagName==="BUTTON"?(s.preventDefault(),s.stopPropagation()):t[e].obj.classList.toggle("fullscreen")}})}},showImage=(o,t)=>{o.images.forEach((l,e)=>{e===t?l.style.display="block":l.style.display="none"})},handleNavState=()=>{const o=document.getElementById("nav_main");if(o){let t=o.querySelectorAll("a"),l=window.location.pathname;t.forEach(e=>{e.href.includes(l)&&(console.log("Active link:",e.href),e.classList.add("active-page"))})}else console.error("Navigation elements not found")};document.addEventListener("DOMContentLoaded",()=>{handleNavState()});
-//# sourceMappingURL=script.js.map
+const scrollToContent = () => {
+    let content = document.querySelector('.content');
+
+    // smooth scroll to content
+    if (content) {
+        content.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            content: 'nearest'
+        });
+    } else {
+        console.error('Content element not found');
+    }
+};
+
+const scrollToPost = () => {
+    let postContent = document.querySelector('.post-content');
+
+    // smooth scroll to post content
+    if (postContent) {
+        postContent.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+    } else {
+        console.error('Post content element not found');
+    }
+};
+
+const handleNavClick = (event) => {
+    let nav_main = document.getElementById('nav_main');
+
+    nav_main.classList.toggle('open');
+    event.preventDefault();
+    event.stopPropagation();
+};
+
+const handleNavState = () => {
+    const nav_main = document.getElementById('nav_main');
+
+    if (nav_main) {
+        let navLinks = nav_main.querySelectorAll('a');
+        let pathname = window.location.pathname;
+        navLinks.forEach((link) => {
+            if (link.href.includes(pathname)) {
+                console.log('Active link:', link.href);
+                link.classList.add('active-page');
+            }
+        });
+
+    } else {
+        console.error('Navigation elements not found');
+    }
+};
+
+
+const createRandomDust = () => {
+    // Add some random dust particles
+
+    const dust = document.querySelector('.dust');
+    const randomX = Math.random() * 100;
+    const randomY = Math.random() * 100;
+    const size = Math.random() * 2 + 1;
+
+    const particle = document.createElement('div');
+    particle.style.position = 'absolute';
+    particle.style.left = randomX + '%';
+    particle.style.top = randomY + '%';
+    particle.style.width = size + 'px';
+    particle.style.height = size + 'px';
+    particle.style.background = 'rgba(255,255,255,0.6)';
+    particle.style.borderRadius = '50%';
+    particle.style.animation = 'dust 12s linear infinite';
+
+    dust.appendChild(particle);
+
+    // Remove particle after animation
+    setTimeout(() => {
+        if (particle.parentNode) {
+            particle.parentNode.removeChild(particle);
+        }
+    }, 12000);
+
+    // Create random dust particles periodicallyAdd commentMore actions
+    setInterval(createRandomDust, 2000);
+};
+
+const handleGalleries = () => {
+    const galleries = document.querySelectorAll('.wp-block-gallery');
+
+    galleries.forEach((gallery) => {
+        const gallery_image = gallery.querySelectorAll('img');
+        gallery_image.forEach((image) => {
+            
+            image.addEventListener('click', () => {
+                image.classList.toggle('gallery-fullscreen');
+                document.querySelectorAll('.wp-block-gallery img').forEach((img) => {
+                    if (img !== image) {
+                        img.classList.remove('gallery-fullscreen');
+                    }
+                }
+                );
+                if (image.classList.contains('gallery-fullscreen')) {
+                    image.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center',
+                        inline: 'nearest'
+                    });
+                }
+                    
+            });
+        });
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    createRandomDust();
+    handleGalleries();
+    // handleGalleryFullscreen();
+
+    handleNavState();
+});
