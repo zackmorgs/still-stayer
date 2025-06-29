@@ -86,38 +86,9 @@ const createRandomDust = () => {
     setInterval(createRandomDust, 2000);
 };
 
-const handleGalleries = () => {
-    const galleries = document.querySelectorAll('.wp-block-gallery');
 
-    galleries.forEach((gallery) => {
-        const gallery_image = gallery.querySelectorAll('img');
-        gallery_image.forEach((image) => {
-            
-            image.addEventListener('click', () => {
-                image.classList.toggle('gallery-fullscreen');
-                document.querySelectorAll('.wp-block-gallery img').forEach((img) => {
-                    if (img !== image) {
-                        img.classList.remove('gallery-fullscreen');
-                    }
-                }
-                );
-                if (image.classList.contains('gallery-fullscreen')) {
-                    image.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center',
-                        inline: 'nearest'
-                    });
-                }
-                    
-            });
-        });
-    });
-};
 
 document.addEventListener('DOMContentLoaded', () => {
     createRandomDust();
-    handleGalleries();
-    // handleGalleryFullscreen();
-
     handleNavState();
 });

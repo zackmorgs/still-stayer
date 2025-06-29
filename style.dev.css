@@ -281,7 +281,8 @@ hr {
   border: 1px solid #fff7f742;
 }
 
-.btn:hover {
+.btn:hover,
+.wp-block-button__link:hover {
   transform: scale(1.05);
 }
 
@@ -1212,35 +1213,6 @@ h3 {
   translate: scale(1.05);
 }
 
-.wp-block-gallery {
-  /* display:flex; */
-  width: 100%;
-  margin: 0;
-  position: relative;
-}
-
-.wp-block-image {
-  margin: 0;
-}
-
-.gallery-fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right:0;
-  bottom:0;
-  width: 100% !important;
-  height: auto !important;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.gallery-hidden {
-  display:none;
-}
 
 /* sm: ≥ 640px */
 @media (min-width: 640px) {
