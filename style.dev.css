@@ -375,7 +375,10 @@ h3 {
 }
 
 #content_bandcamp {
-  background: url("/wp-content/themes/still-stayer/img/album-all_heart-bg.jpg") center center / cover no-repeat;
+  background: url("/wp-content/themes/still-stayer/img/album-all_heart-bg.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #bandcamp_header {
@@ -389,6 +392,9 @@ h3 {
 
 #content_contact {
   background-image: url('/wp-content/themes/still-stayer/img/Resized/5-2.jpg');
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content_contact .content-float {
@@ -397,6 +403,9 @@ h3 {
 
 #content_spotify {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/7.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content_spotify .content-float {
@@ -406,16 +415,28 @@ h3 {
 
 #content_apple_music {
   background-image:url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content_amazon {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/8.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #content_deezer {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #content_pandora {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/9-2.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .icon-spotify-text {
@@ -428,10 +449,16 @@ h3 {
 
 #content_youtube {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content_big_cartel {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content_big_cartel .content-float {
@@ -473,6 +500,9 @@ h3 {
 
 #excerpts {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/3.jpg");
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #heading_latest_posts {
