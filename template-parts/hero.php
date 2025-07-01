@@ -24,7 +24,7 @@ $title = $args['title'] ?? 'Default Title';
             <div class="flicker"></div>
         </div>
         <div class="light-sources">
-            <div class="light-beam light-beam-1"></div>
+            <!-- <div class="light-beam light-beam-1"></div>
             <div class="light-beam light-beam-2"></div>
             <div class="light-beam light-beam-3"></div>
 
@@ -32,7 +32,7 @@ $title = $args['title'] ?? 'Default Title';
             <div class="spotlight spotlight-2"></div>
 
             <div class="lens-flare lens-flare-1"></div>
-            <div class="lens-flare lens-flare-2"></div>
+            <div class="lens-flare lens-flare-2"></div> -->
 
             <!-- this was too much -->
             <!-- <div class="god-rays"></div> -->
