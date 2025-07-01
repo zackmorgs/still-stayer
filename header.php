@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="description" content="Still Stayer's official website. Explore our music, shows, merch, and more.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php wp_title('|', true, 'right');
   bloginfo('name'); ?></title>
@@ -19,6 +21,7 @@
   <link rel="icon" type="image/png" sizes="16x16"
     href="<?php echo get_template_directory_uri(); ?>/img/favicon-16x16.png">
   <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/site.webmanifest">
+  
 </head>
 
 <body <?php body_class(); ?>>
