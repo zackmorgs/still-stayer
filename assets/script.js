@@ -83,12 +83,12 @@ const createRandomDust = () => {
     }, 12000);
 
     // Create random dust particles periodicallyAdd commentMore actions
-    setInterval(createRandomDust, 2000);
+    setInterval(createRandomDust, 5000);
 };
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    createRandomDust();
+    // createRandomDust();
     handleNavState();
 });
