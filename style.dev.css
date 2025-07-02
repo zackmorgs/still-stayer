@@ -185,7 +185,8 @@ main {
   align-items: center;
 
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("/wp-content/themes/still-stayer/img/DSC_8784-Enhanced-NR-CROPPED.jpg");
-  
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
