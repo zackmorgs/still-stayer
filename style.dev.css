@@ -185,9 +185,6 @@ main {
   align-items: center;
 
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("/wp-content/themes/still-stayer/img/DSC_8784-Enhanced-NR-CROPPED.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   
   position: relative;
 }
@@ -343,7 +340,61 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+}
+
+#content_merch {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/IMG_7153.jpg");
+}
+
+#content_bandcamp {
+  background: url("/wp-content/themes/still-stayer/img/album-all_heart-bg.jpg");
+
+}
+
+#content_contact {
+  background-image: url('/wp-content/themes/still-stayer/img/Resized/5-2.jpg');
+}
+
+#content_apple_music {
+  background-image:url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
+
+}
+
+#content_amazon {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/8.jpg");
+
+}
+#content_deezer {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
+
+}
+#content_pandora {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/9-2.jpg");
+
+}
+
+
+#content_youtube {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
+
+}
+
+#content_big_cartel {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
+
+}
+
+
+#content_spotify {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/7.jpg");
+
+}
+
+
+#excerpts {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/3.jpg");
+
 }
 
 .content-float {
@@ -367,19 +418,7 @@ h3 {
   color: #f1f1f1;
 }
 
-#content_merch {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/IMG_7153.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-#content_bandcamp {
-  background: url("/wp-content/themes/still-stayer/img/album-all_heart-bg.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #bandcamp_header {
   max-width: 48ch;
@@ -390,22 +429,9 @@ h3 {
   backdrop-filter: blur(0.15rem);
 }
 
-#content_contact {
-  background-image: url('/wp-content/themes/still-stayer/img/Resized/5-2.jpg');
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #content_contact .content-float {
   background: #000000a6;
-}
-
-#content_spotify {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/7.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #content_spotify .content-float {
@@ -413,31 +439,7 @@ h3 {
   backdrop-filter: blur(0.15rem);
 }
 
-#content_apple_music {
-  background-image:url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-#content_amazon {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/8.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#content_deezer {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#content_pandora {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/9-2.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .icon-spotify-text {
   max-width: 8rem;
@@ -445,20 +447,6 @@ h3 {
 
 .icon-big-cartel {
   width: 6rem;
-}
-
-#content_youtube {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/band-1.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#content_big_cartel {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/6-2.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #content_big_cartel .content-float {
@@ -498,12 +486,6 @@ h3 {
   width: 4rem;
 }
 
-#excerpts {
-  background-image: url("/wp-content/themes/still-stayer/img/Resized/3.jpg");
-    background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #heading_latest_posts {
   color: white;
