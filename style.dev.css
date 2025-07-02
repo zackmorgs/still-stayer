@@ -344,6 +344,15 @@ h3 {
   /* background-attachment: fixed; */
 }
 
+#content_about {
+  background-image: url("/wp-content/themes/still-stayer/img/Resized/2 copy.jpg");
+}
+
+#content_about .content-float{
+  background:#111;
+  margin-top: -4rem;
+}
+
 #content_merch {
   background-image: url("/wp-content/themes/still-stayer/img/Resized/IMG_7153.jpg");
 }
