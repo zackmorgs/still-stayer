@@ -59,10 +59,10 @@
       </nav>
     </div>
   </header>
-  <section id="section_bandcamp_embed" class="content">
+  <!-- <section id="section_bandcamp_embed" class="content">
     <div class="content-float">
 
     </div>
-  </section>
+  </section> -->
 </main>
 <?php get_footer(); ?>
