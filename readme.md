@@ -1,6 +1,10 @@
 # still-stayer
 My go at a wordpress theme for the band [Still Stayer](https://facebook.com/stillstayer).
 
+Website is in a near-finished stage and needs content. 
+
+[stillstayer.com](https://stillstayer.com/)
+
 ## To DO:
 - Loading state for website
 - Cookies acceptance?
